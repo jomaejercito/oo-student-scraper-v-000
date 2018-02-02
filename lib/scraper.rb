@@ -32,6 +32,8 @@ class Scraper
         profile_page[:linkedin] = link
       when link.include?("github")
         profile_page[:github] = link  
+      else
+        
       end
     end
   end
