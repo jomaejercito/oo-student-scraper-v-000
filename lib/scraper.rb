@@ -38,6 +38,7 @@ class Scraper
     end
     profile_page[:bio] = doc.css(".description-holder p").text
     profile_page[:profile_quote] = doc.css(".profile-quote").text
+    profile_page
   end
 
 end
