@@ -12,7 +12,7 @@ class Scraper
       student_hash = {
         :name => card.css("h4.student-name").text
         :location => card.css("p.student-location").text
-        :profile_url => card.css("h4.student-name").text
+        :profile_url => card.css("a").attribute
       }
     end  
     
