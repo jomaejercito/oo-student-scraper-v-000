@@ -9,7 +9,9 @@ class Scraper
     students = []
     
     doc.css("div.student-card").each do |card|
-      scraped = 
+      student_hash = {
+        
+      }
     end  
     
   end
