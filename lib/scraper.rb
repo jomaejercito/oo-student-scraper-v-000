@@ -27,11 +27,11 @@ class Scraper
       link = x.attr("href")
       case
       when link.include?("twitter")
-        profile_page[: ] = link
-      when link.include?("twitter")
-        profile_page[: ] = link
-      when link.include?("twitter")
-        profile_page[: ] = link  
+        profile_page[:twitter] = link
+      when link.include?("linkedin")
+        profile_page[:linkedin] = link
+      when link.include?("github")
+        profile_page[:github] = link  
       end
     end
   end
