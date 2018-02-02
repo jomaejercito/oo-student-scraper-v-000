@@ -27,7 +27,7 @@ class Scraper
       link = x.attr("href")
       case
       when link.include?("twitter")
-        student_hash[] = link
+        profile_page[] = link
       end
     end
   end
