@@ -14,8 +14,9 @@ class Scraper
         :location => card.css("p.student-location").text
         :profile_url => card.css("a").attribute("href").value
       }
+      student_array << student_hash
     end  
-    
+    student_array
   end
 
   def self.scrape_profile_page(profile_url)
