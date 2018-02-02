@@ -10,7 +10,7 @@ class Scraper
     
     doc.css("div.student-card").each do |card|
       student_hash = {
-        :name => 
+        :name => card.css
         :location => 
         :profile_url => 
       }
