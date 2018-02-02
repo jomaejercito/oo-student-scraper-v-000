@@ -24,7 +24,7 @@ class Scraper
     profile_page = {}
     
     doc.css(".social-icon-container a").each do |x| 
-      link = a.attr("href")
+      link = x.attr("href")
       case
       when link.include?("twitter")
         student_hash[] = link
